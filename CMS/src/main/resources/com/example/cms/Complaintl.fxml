@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e5ecff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cms.CommonController">
+   <children>
+      <Label layoutX="137.0" layoutY="156.0" text="&quot;Thank you for submitting your complaint!&quot;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="backtohome" layoutX="231.0" layoutY="262.0" mnemonicParsing="false" onAction="#DirectToHomePage" style="-fx-background-color: #40558c;" text="Go back to home page" textFill="#e5ecff">
+         <font>
+            <Font name="Corbel Light" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

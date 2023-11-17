@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cms.complaintlogController">
+   <children>
+      <TableView fx:id="table" layoutX="8.0" layoutY="44.0" pickOnBounds="false" prefHeight="312.0" prefWidth="584.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="usernamelog" editable="false" prefWidth="95.20001220703125" resizable="false" sortable="false" text="user_Id" />
+          <TableColumn fx:id="complaintlog" editable="false" prefWidth="388.800048828125" sortable="false" text="complaint_details" />
+            <TableColumn fx:id="complaintdate" editable="false" minWidth="0.0" prefWidth="95.2000732421875" resizable="false" sortable="false" text="c_date" />
+        </columns>
+      </TableView>
+      <Button fx:id="BackToHome" layoutX="540.0" layoutY="1.0" mnemonicParsing="false" onAction="#DirectToHomePage" prefHeight="26.0" prefWidth="60.0" style="-fx-cursor: Hand;" text="Home" />
+      <Button fx:id="ViewAllComplaints" layoutX="467.0" layoutY="369.0" mnemonicParsing="false" onAction="#ViewAllComplaintsOnAction" text="View all complaints" />
+   </children>
+</AnchorPane>

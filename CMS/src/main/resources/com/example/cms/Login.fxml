@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cms.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7cbcf" height="117.0" layoutX="59.0" layoutY="59.0" stroke="BLACK" strokeType="INSIDE" width="514.0" />
+      <Label layoutX="72.0" layoutY="101.0" text="MODERN COMPLAINT MANAGEMENT SYSTEM">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_username" layoutX="293.0" layoutY="219.0" promptText="Username" />
+      <ImageView fitHeight="68.0" fitWidth="75.0" layoutX="26.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="68.0" fitWidth="75.0" layoutX="34.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ProfileImageView" fitHeight="25.0" fitWidth="21.0" layoutX="244.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IMAGES/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="KeyImageView" fitHeight="21.0" fitWidth="28.0" layoutX="244.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IMAGES/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LogoImageView" fitHeight="109.0" fitWidth="114.0" layoutX="82.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IMAGES/user.gif" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="tf_password" layoutX="292.0" layoutY="260.0" prefHeight="21.0" prefWidth="150.0" promptText="Password" />
+      <Button fx:id="button_login" layoutX="277.0" layoutY="315.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="78.0" style="-fx-cursor: hand; -fx-background-color: #c7cbcf;" text="Log In" textAlignment="JUSTIFY" />
+      <Hyperlink fx:id="signup_link" layoutX="226.0" layoutY="362.0" onAction="#sSignup_linkOnAction" text="Don't have an account ? Sign Up" />
+      <Label fx:id="LoginMessageLabel" layoutX="256.0" layoutY="286.0" prefHeight="18.0" prefWidth="198.0" textFill="#ff1919" AnchorPane.bottomAnchor="90.6" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cms.tempController">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="-3.0" prefHeight="400.0" prefWidth="606.0" style="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss: #000000;" tabClosingPolicy="UNAVAILABLE" AnchorPane.rightAnchor="0.0">
+        <tabs>
+          <Tab fx:id="tab1" text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="385.0" fitWidth="669.0" layoutX="9.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-63.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../../../IMAGES/Homeimg.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="directtocomplaintslog" layoutX="409.0" layoutY="320.0" mnemonicParsing="false" onAction="#DirectToComplainLogPage" style="-fx-background-color: #2c3c7e; -fx-cursor: Hand;" text="View previous Complaints" textFill="#abdbff" />
+                        <Label fx:id="WelcomeLabel" layoutX="28.0" layoutY="32.0" text="Welcome to CMS Portal!" textFill="#19275b">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="319.0" layoutY="99.0" text="Report an Issue:" textFill="#0b1538">
+                           <font>
+                              <Font name="Arial" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="318.0" layoutY="125.0" text="Let us know about any problems or concerns" textFill="#a5c5ff" />
+                        <Label layoutX="318.0" layoutY="143.0" text="related to BMC services, infrastructure, or civic issues." textFill="#a5c5ff" />
+                        <Label layoutX="319.0" layoutY="161.0" text="Your feedback helps improve our city." textFill="#a5c5ff" />
+                        <Label layoutX="355.0" layoutY="211.0" text="Please provide details about your complaint," textFill="#a5c5ff" />
+                        <Label layoutX="401.0" layoutY="229.0" text="and we'll take it from there." textFill="#a5c5ff" />
+                        <Button fx:id="LogOutButton" layoutX="546.0" mnemonicParsing="false" onAction="#DirectToLoginPagee" style="-fx-background-color: #2c3c7e; -fx-cursor: Hand;" text="Log Out" textFill="#abdbff" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Complaint">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e5ecff;">
+                     <children>
+                        <TextArea fx:id="tf_complaint" layoutX="28.0" layoutY="76.0" prefHeight="164.0" prefWidth="334.0" promptText="Write your issue..." />
+                        <Label layoutX="24.0" layoutY="255.0" text="Upload image:" textFill="#40558c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Label>
+                        <Button fx:id="submitimage" layoutX="121.0" layoutY="314.0" mnemonicParsing="false" onAction="#registerthecomplaint" prefHeight="18.0" prefWidth="111.0" style="-fx-background-color: #40558c;" text="SUBMIT" textFill="#e5ecff" />
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="41.0" prefWidth="322.0" text="Register Your Complaint " textAlignment="CENTER" textFill="#40558c">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="271.0" fitWidth="214.0" layoutX="362.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../IMAGES/complaintimg.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="uploadimagebutton" layoutX="129.0" layoutY="252.0" mnemonicParsing="false" onAction="#uploadSetOnAction" prefHeight="18.0" prefWidth="111.0" style="-fx-background-color: #c8cbcf;" text="Upload image" />
+                        <Label fx:id="complaintlabel" layoutX="91.0" layoutY="285.0" prefHeight="18.0" prefWidth="246.0" textFill="#e40505" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Customer Support">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="205.0" fitWidth="335.0" layoutX="275.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../IMAGES/customer support.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="contactus" layoutX="17.0" layoutY="258.0" mnemonicParsing="false" onAction="#DirectTocustomerSupport" style="-fx-background-color: #f7865a; -fx-cursor: hand;" text="Contact Us" />
+                        <Label layoutX="17.0" layoutY="58.0" prefHeight="42.0" prefWidth="146.0" text="Our Customer">
+                           <font>
+                              <Font name="ArtifaktElement-Medium" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="93.0" prefHeight="42.0" prefWidth="146.0" text="Support">
+                           <font>
+                              <Font name="ArtifaktElement-Medium" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="159.0" prefHeight="18.0" prefWidth="288.0" text="Streamline complaint resolution with our ">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" prefHeight="18.0" prefWidth="288.0" text=" user-friendly Complaint Management System">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="194.0" prefHeight="18.0" prefWidth="288.0" text="Empower our team to efficiently address ">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="212.0" prefHeight="18.0" prefWidth="288.0" text="customer concerns">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Reviews">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="232.0" fitWidth="282.0" layoutX="293.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../IMAGES/review.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea fx:id="tf_review" layoutX="14.0" layoutY="71.0" prefHeight="195.0" prefWidth="272.0" promptText="Post your review..." style="-fx-background-color: #e5ecff;" />
+                        <Label alignment="CENTER" layoutX="-100.0" layoutY="23.0" prefHeight="41.0" prefWidth="322.0" text="Review" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="102.0" layoutY="300.0" mnemonicParsing="false" onAction="#reviewOnAction" prefHeight="26.0" prefWidth="70.0" text="Post" />
+                        <Button fx:id="r_button" layoutX="389.0" layoutY="300.0" mnemonicParsing="false" onAction="#DirectToComplainLogPage1" text="View Previous Reviews" />
+                        <Label fx:id="reviewlabel" layoutX="46.0" layoutY="274.0" prefHeight="18.0" prefWidth="182.0" textFill="#ea0000" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TabPane>
+   </children>
+</AnchorPane>

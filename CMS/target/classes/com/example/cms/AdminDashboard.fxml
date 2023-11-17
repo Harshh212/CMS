@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cms.AdminController">
+   <children>
+      <TabPane layoutX="129.0" layoutY="66.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Complaints">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table" layoutX="32.0" layoutY="31.0" prefHeight="309.0" prefWidth="537.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="31.0">
+                          <columns>
+                            <TableColumn fx:id="usernamelog" prefWidth="91.20001602172852" text="user_Id" />
+                            <TableColumn fx:id="complaintlog" prefWidth="360.800048828125" text="complaint_details" />
+                              <TableColumn fx:id="complaintdate" minWidth="0.0" prefWidth="83.19985961914062" text="c_date" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="BackToLogin" layoutX="535.0" layoutY="1.0" mnemonicParsing="false" onAction="#DirectToLoginPage" prefHeight="26.0" prefWidth="68.0" style="-fx-cursor: Hand;" text="LogOut" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Reviews">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table1" layoutX="38.0" layoutY="32.0" prefHeight="306.0" prefWidth="524.0" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="32.0">
+                          <columns>
+                            <TableColumn fx:id="Username" prefWidth="85.59997940063477" text="Username" />
+                            <TableColumn fx:id="Reviewlog" prefWidth="437.59996032714844" text="Reviews" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="BackToLogin1" layoutX="532.0" layoutY="1.0" mnemonicParsing="false" onAction="#DirectToLoginPage" prefHeight="26.0" prefWidth="68.0" style="-fx-cursor: Hand;" text="LogOut" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
